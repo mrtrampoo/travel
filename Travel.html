@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+    <title>Travel.</title>
+<head>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        h1 {
+            font-size: 44px;
+            padding: 20px;
+            position: fixed;
+            z-index: +1;
+            width: 100%;
+            text-align: center;
+            top: 0px;
+            margin-top: 0px;
+
+        }
+        h2 {
+            transition: transform 0.3s;
+            font-size: 28px;
+        }
+        i {
+            color:white;
+            position: fixed;
+            font-size: 36px;
+            top: 28px;
+            left: 120px;
+            margin-top: 0px;
+            z-index: +2;
+            border-radius: 40%;
+            border: 8px solid rgba(120,120,120,0);
+            transition: all 0.2s;
+        }
+        i:hover {
+            background-color: rgba(120,120,120,0.15);
+            box-shadow: 0px 0px 10px rgba(120,120,120,0.15);
+            border: 8px solid rgba(120,120,120,0);
+        }
+        .container {
+            width: 90%;
+            background-color: rgb(30,30,30);
+            border-radius: 10px;
+            display: grid;
+            grid-template-rows: repeat(4, 300px);
+            grid-template-columns: repeat(auto-fit, minmax(225px, 1fr)) ;
+            margin: 60px auto;
+            margin-top: 100px;
+        }
+        .photo {
+            background-color: grey;
+            border-radius: 8px;
+            text-align: center;
+            margin: 15px;
+            background-size: cover;
+            padding-top: 195px;
+            transition: --transparent 0.3s, box-shadow 0.3s, transform 0.3s;
+        }
+        .photo1 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(Dorf.JPEG);
+        }
+        .photo2 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(Metro.JPEG);
+        }
+        .photo3 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(Pisa.JPEG);
+        }
+        .photo4 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(Luna.JPEG);
+        }
+        .photo5 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(Auto.JPEG);
+        }
+        .photo6 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(Monstera.JPEG);
+        }
+        .photo7 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(Moro2.JPEG);
+        }
+        .photo8 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(Dachstuhl.JPEG);
+        }
+        .photo:hover {
+            --transparent: rgba(0,0,0,0.6);
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+            transform: translateY(-2px);
+        }
+        .photo1:hover #t1 {
+            transform: translateY(-5px);
+        }
+        .photo2:hover #t2 {
+            transform: translateY(-5px);
+        }
+        .photo3:hover #t3 {
+            transform: translateY(-5px);
+        }
+        .photo4:hover #t4 {
+            transform: translateY(-5px);
+        }
+        .photo5:hover #t5 {
+            transform: translateY(-5px);
+        }
+        .photo6:hover #t6 {
+            transform: translateY(-5px);
+        }
+        @property --transparent {
+            syntax: "<color>";
+            inherits: false;
+            initial-value: rgba(0,0,0,0);
+        }
+    </style>
+</head>
+<body>
+    <a href="Travel.html"><i class="bx bxs-home"></i></a>
+    <h1> Travel. </h1>
+    <div class="container">
+        <div class="photo photo1"><a href="Mallorca.html"><h2 id="t1">Mallorca</h2></a></div>
+        <div class="photo photo2"><a href="Paris.html"><h2 id="t2">Paris</h2></div></a>
+        <div class="photo photo3"><h2 id="t3">Pisa</h2></div>
+        <div class="photo photo4"><h2 id="t4">Luna</h2></div>
+        <div class="photo photo5"><h2 id="t5">Asthetic</h2></div>
+        <div class="photo photo6">6</div>
+        <div class="photo photo7">7</div>
+        <div class="photo photo8">8</div>
+        <div class="photo photo9">9</div>
+        <div class="photo photo10">10</div>
+    </div>
+</body>
