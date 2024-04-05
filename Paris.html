@@ -1,126 +1,28 @@
 <!DOCTYPE html>
 <html lang="de">
-    <title>Travel.</title>
+    <title>Paris.</title>
 <head>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/travel.css">
     <style>
-        body {
-            background-color: black;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-        }
-        a {
-            text-decoration: none;
-            color: white;
-        }
-        h1 {
-            font-size: 44px;
-            padding: 20px;
-            position: fixed;
-            z-index: +1;
-            width: 100%;
-            text-align: center;
-            top: 0px;
-            margin-top: 0px;
-
-        }
-        h2 {
-            transition: transform 0.3s;
-            font-size: 28px;
-        }
-        i {
-            color:white;
-            position: fixed;
-            font-size: 36px;
-            top: 28px;
-            left: 120px;
-            margin-top: 0px;
-            z-index: +2;
-            border-radius: 40%;
-            border: 8px solid rgba(120,120,120,0);
-            transition: all 0.2s;
-        }
-        i:hover {
-            background-color: rgba(120,120,120,0.15);
-            box-shadow: 0px 0px 10px rgba(120,120,120,0.15);
-            border: 8px solid rgba(120,120,120,0);
-        }
-        .container {
-            width: 90%;
-            background-color: rgb(30,30,30);
-            border-radius: 10px;
-            display: grid;
-            grid-template-rows: repeat(4, 300px);
-            grid-template-columns: repeat(auto-fit, minmax(225px, 1fr)) ;
-            margin: 60px auto;
-            margin-top: 100px;
-        }
-        .photo {
-            background-color: grey;
-            border-radius: 8px;
-            text-align: center;
-            margin: 15px;
-            background-size: cover;
-            padding-top: 195px;
-            transition: --transparent 0.3s, box-shadow 0.3s, transform 0.3s;
-        }
         .photo1 {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(Luvre.JPEG);
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(images/Luvre.JPEG);
         }
         .photo2 {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(Metro.JPEG);
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(images/Metro.JPEG);
         }
         .photo3 {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(Paris_Kirche.JPEG);
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(images/Paris_Kirche.JPEG);
         }
-        .photo4 {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url();
-        }
-        .photo5 {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url();
-        }
-        .photo6 {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url();
-        }
-        .photo7 {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url();
-        }
-        .photo8 {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url();
-        }
-        .photo:hover {
-            --transparent: rgba(0,0,0,0.6);
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
-            transform: translateY(-2px);
-        }
-        .photo1:hover #t1 {
-            transform: translateY(-5px);
-        }
-        .photo2:hover #t2 {
-            transform: translateY(-5px);
-        }
-        .photo3:hover #t3 {
-            transform: translateY(-5px);
-        }
-        .photo4:hover #t4 {
-            transform: translateY(-5px);
-        }
-        .photo5:hover #t5 {
-            transform: translateY(-5px);
-        }
-        .photo6:hover #t6 {
-            transform: translateY(-5px);
-        }
-        @property --transparent {
-            syntax: "<color>";
-            inherits: false;
-            initial-value: rgba(0,0,0,0);
-        }
+
     </style>
 </head>
 <body>
-    <a href="Travel.html"><i class="bx bxs-home"></i></a>
-    <h1> Travel. </h1>
+    <a href="Travel.html"><i class="bx bxs-homei-top"></i></a>
+    <h1> Paris. </h1>
+    <i class='bx bx-menu i-top'></i>
+    <i class='bx bx-world i-top'></i>
+    <a href="worldmap.html"><i class='bx bx-world i-top'></i></a>
     <div class="container">
         <div class="photo photo1"><h2 id="t1">Luvre</h2></div>
         <div class="photo photo2"><h2 id="t2">Metro</h2></div>

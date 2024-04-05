@@ -1,0 +1,200 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+h1 {
+    font-size: 44px;
+    padding-top: 20px;
+    position: fixed;
+    z-index: +1;
+    width: 100%;
+    text-align: center;
+    top: 0px;
+    margin-top: 0px;
+    left: 0px;
+}
+h2 {
+    transition: transform 0.3s;
+    font-size: 28px;
+}
+.i-top {
+    color:white;
+    position: fixed;
+    font-size: 36px;
+    top: 20px;
+    margin-top: 0px;
+    z-index: +2;
+    border-radius: 40%;
+    border: 8px solid rgba(120,120,120,0);
+    transition: all 0.25s;
+}
+.bxs-home {
+    left: 9%;
+}
+.bx-world{
+    right: 18%;
+}
+.bx-menu {
+    right: 9%;
+}
+.i-top:hover {
+    background-color: rgba(35,35,35,0.5);
+    box-shadow: 0px 0px 10px rgba(35,35,35,0.5);
+    border: 8px solid rgba(120,120,120,0);
+    color: greenyellow;
+}
+.container {
+    width: 90%;
+    background-color: rgb(30,30,30);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(5, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr)) ;
+    margin: 60px auto;
+    margin-top: 100px;
+}
+.photo {
+    background-color: grey;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px;
+    background-size: cover;
+    padding-top: 195px;
+    transition: --transparent 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.photo1 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(../images/testbild.jpg);
+}
+.photo2 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(../images/testbild.jpg);
+}
+.photo3 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(../images/testbild.jpg);
+}
+.photo4 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(../images/testbild.jpg);
+}
+.photo5 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(../images/testbild.jpg);
+}
+.photo6 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(../images/testbild.jpg);
+}
+.photo7 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(../images/testbild.jpg);
+}
+.photo8 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(../images/testbild.jpg);
+}
+.photo9 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(../images/testbild.jpg);
+}
+.photo10 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--transparent)), url(../images/testbild.jpg);
+}
+
+/*.container::before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 300%;
+    background-color: white;
+    top: -20%;
+    left: 25%;
+    transform: rotate(45deg);
+}*/
+.photo:hover {
+    --transparent: rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+    transform: translateY(-2px);
+}
+.photo1:hover #t1 {
+    transform: translateY(-5px);
+}
+.photo2:hover #t2 {
+    transform: translateY(-5px);
+}
+.photo3:hover #t3 {
+    transform: translateY(-5px);
+}
+.photo4:hover #t4 {
+    transform: translateY(-5px);
+}
+.photo5:hover #t5 {
+    transform: translateY(-5px);
+}
+.photo6:hover #t6 {
+    transform: translateY(-5px);
+}
+.photo7:hover #t7 {
+    transform: translateY(-5px);
+}
+.photo8:hover #t8 {
+    transform: translateY(-5px);
+}
+.photo9:hover #t9 {
+    transform: translateY(-5px);
+}
+.photo10:hover #t10 {
+    transform: translateY(-5px);
+}
+/* Europe Map*/
+.map {
+    border-radius: 30px;
+    width: 90%;
+}
+.map-container {
+    display: grid;
+    position: absolute;
+    grid-template-rows: repeat(30, 1fr);
+    grid-template-columns: repeat(30, 1fr);
+    width: 90%;
+    background-image: url("../images/map.png");
+    background-size: contain;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    left: 5%;
+    margin-top: 90px;
+    aspect-ratio: 16/13;
+}
+.pin:hover {
+    transform: translateY(-5px);
+    background-color: rgba(35,35,35,0.5);
+    box-shadow: 0px 0px 10px rgba(35,35,35,0.5);
+    color: greenyellow;
+    z-index: +3;
+}
+.pin:hover .place {
+    color: white;
+}
+.pin {
+    color: white;
+    position: absolute;
+    font-size: clamp(2rem, 4.2vw, 4rem);
+    z-index: +2;
+    transition: all 0.5s;
+    background-color: rgba(0,0,0,0);
+    border-radius: 20px;
+    padding: 3px;
+}
+.place {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(1rem, 2vw, 2rem);
+    padding-right: 5px;
+    display: inline-flex;
+    transform: translateY(-1vw);
+    font-weight: bold;
+    color: rgba(0,0,0,0);
+    transition: color 0.5s;
+}
+@property --transparent {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: rgba(0,0,0,0);
+}
